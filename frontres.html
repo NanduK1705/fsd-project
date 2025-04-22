@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Frontend Resources</title>
+  <link rel="stylesheet" href="course.css" />
+</head>
+<body>
+  <!-- Frontend Resources Section -->
+  <div class="resource-container">
+    <h1>🚀 Top Resources to Learn Frontend Development</h1>
+    <input type="text" id="searchInput" placeholder="Search resources..." />
+
+    <div class="resource-grid" id="resourceGrid">
+      <div class="resource-card">
+        <h3>MDN Web Docs</h3>
+        <p>Comprehensive HTML, CSS, and JS reference by Mozilla.</p>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>Frontend Mentor</h3>
+        <p>Practice frontend coding with real-world challenges.</p>
+        <a href="https://www.frontendmentor.io/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>W3Schools</h3>
+        <p>Beginner-friendly tutorials for HTML, CSS, and JS.</p>
+        <a href="https://www.w3schools.com/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>freeCodeCamp</h3>
+        <p>Interactive frontend courses with certification.</p>
+        <a href="https://www.freecodecamp.org/learn/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>CSS Tricks</h3>
+        <p>Tips, guides, and tutorials on modern CSS techniques.</p>
+        <a href="https://css-tricks.com/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>React Docs</h3>
+        <p>Official documentation to master React.js</p>
+        <a href="https://react.dev/learn" target="_blank">Visit</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Live search filter
+    const input = document.getElementById("searchInput");
+    input.addEventListener("keyup", function () {
+      const filter = input.value.toLowerCase();
+      const cards = document.querySelectorAll(".resource-card");
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

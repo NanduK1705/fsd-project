@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Java Resources</title>
+  <link rel="stylesheet" href="course.css" />
+</head>
+<body>
+  <!-- Java Resources Content -->
+  <div class="resource-container">
+    <h1>🚀 Top Resources to Learn Java</h1>
+    <input type="text" id="searchInput" placeholder="Search resources..." />
+
+    <div class="resource-grid" id="resourceGrid">
+      <div class="resource-card">
+        <h3>JavaTpoint</h3>
+        <p>Simple Java tutorials with examples and exercises.</p>
+        <a href="https://www.javatpoint.com/java-tutorial" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>Oracle Docs</h3>
+        <p>Official documentation and tutorials from Oracle.</p>
+        <a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>GeeksforGeeks</h3>
+        <p>Articles, challenges, and core Java concepts.</p>
+        <a href="https://www.geeksforgeeks.org/java/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>CodeAcademy</h3>
+        <p>Interactive course for Java fundamentals.</p>
+        <a href="https://www.codecademy.com/learn/learn-java" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>Udemy</h3>
+        <p>Complete Java masterclass (Paid).</p>
+        <a href="https://www.udemy.com/course/java-the-complete-java-developer-course/" target="_blank">Visit</a>
+      </div>
+      <div class="resource-card">
+        <h3>FreeCodeCamp Java Playlist</h3>
+        <p>Full Java course for beginners on YouTube.</p>
+        <a href="https://www.youtube.com/watch?v=GoXwIVyNvX0" target="_blank">Watch</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to filter cards
+    const input = document.getElementById("searchInput");
+    input.addEventListener("keyup", function () {
+      const filter = input.value.toLowerCase();
+      const cards = document.querySelectorAll(".resource-card");
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
