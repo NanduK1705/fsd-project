@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Stack FAQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .accordion {
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion:hover {
+      background-color: #eee;
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Full Stack Development FAQs</h2>
+
+<button class="accordion">What is Full Stack Development?</button>
+<div class="panel">
+  <p>Full stack development refers to the development of both the frontend (client-side) and backend (server-side) parts of a web application. Full stack developers are capable of building a complete product from start to finish.</p>
+</div>
+
+<button class="accordion">Is Full Stack Developer a good career choice?</button>
+<div class="panel">
+  <p>Yes, full stack developers are in high demand due to their ability to handle multiple parts of a web project. It’s a versatile and rewarding career with strong job prospects.</p>
+</div>
+
+<button class="accordion">What skills are needed for full stack development?</button>
+<div class="panel">
+  <p>You need to be proficient in frontend technologies (HTML, CSS, JavaScript), frontend frameworks (e.g., React), backend technologies (Node.js, Django, etc.), databases (SQL/NoSQL), and version control (Git).</p>
+</div>
+
+<button class="accordion">How to prepare for a full stack developer interview?</button>
+<div class="panel">
+  <p>Be well-versed in frontend and backend basics, know how to build and consume APIs, understand deployment, security, and system design. Practice coding challenges and review common interview questions for both frontend and backend.</p>
+</div>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>

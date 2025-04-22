@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Developer FAQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .accordion {
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion:hover {
+      background-color: #eee;
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Python Development FAQs</h2>
+
+<button class="accordion">What is Python used for?</button>
+<div class="panel">
+  <p>Python is a versatile language used for web development, data science, machine learning, automation, scripting, game development, and more.</p>
+</div>
+
+<button class="accordion">Is Python Developer a good career choice?</button>
+<div class="panel">
+  <p>Yes, Python is in high demand due to its simplicity and wide range of applications, especially in web development, data analysis, AI, and backend development.</p>
+</div>
+
+<button class="accordion">Do I need a CS degree to become a Python developer?</button>
+<div class="panel">
+  <p>No, many successful Python developers are self-taught or come from non-CS backgrounds. What matters most is practical skills and project experience.</p>
+</div>
+
+<button class="accordion">How to prepare for a Python developer interview?</button>
+<div class="panel">
+  <p>Practice Python coding problems, understand data structures and algorithms, review libraries like Flask/Django, and gain experience with databases and APIs.</p>
+</div>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
