@@ -15,7 +15,7 @@
     }
 
     body {
-      background: #f9fafb;
+      background: rgb(241, 240, 240);
       color: #1f2937;
       line-height: 1.6;
     }
@@ -112,12 +112,12 @@
     }
 
     .signup-btn {
-      background-color: #10b981;
+      background-color: #3b82f6;
       color: white;
     }
 
     .signup-btn:hover {
-      background-color: #059669;
+      background-color: #2563eb;
     }
 
     header {
@@ -135,6 +135,8 @@
       background: linear-gradient(to right, #3b82f6, #10b981);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text; 
+      
     }
 
     .subtitle {
@@ -147,6 +149,24 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
+    .start-btn {
+     background: #3b82f6;
+     color: white;
+     border: none;
+     padding: 0.6rem 1.2rem;
+     border-radius: 8px;
+     font-size: 1rem;
+     font-weight: 500;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     display: inline-block;
+     margin-top: 1rem;
+}
+
+.start-btn:hover {
+  background: #2563eb;
+}
+
 
     /* Light color combination for the language cards */
     .language-card {
@@ -200,38 +220,40 @@
     .skill-list li::before {
       content: '→';
       margin-right: 0.5rem;
-      color: #3b82f6; /* Light blue arrow for skills */
+      color: #687487; /* Light blue arrow for skills */
     }
 
     /* Frontend Development card */
     .language-card:nth-child(1) {
-      background: #f0f1ec; /* Light cyan for Frontend */
+      background: white; 
     }
 
     /* Backend Development card */
     .language-card:nth-child(2) {
-      background: #e8f4e8; /* Light green for Backend */
+      background: white; 
     }
 
     /* Full Stack Development card */
     .language-card:nth-child(3) {
-      background: #f1e0ff; /* Light lavender for Full Stack */
+      background: white; 
+       
     }
 
     /* Java card */
     .language-card:nth-child(4) {
-      background: #fdf2e9; /* Light peach for Java */
+      background: white; 
     }
 
     /* Python card */
     .language-card:nth-child(5) {
-      background: #f3f4f6; /* Light grey for Python */
+      background: white; 
+    }
+    
+     /* C Programming card */
+     .language-card:nth-child(6) {
+      background: white;
     }
 
-    /* C Programming card */
-    .language-card:nth-child(6) {
-      background: #fce7f3; /* Light pink for C Programming */
-    }
 
     footer {
       text-align: center;
@@ -283,8 +305,10 @@
         </div>
       </div>
       <div class="auth-buttons">
-        <button class="login-btn">Login</button>
-        <button class="signup-btn">Sign Up</button>
+        <button class="login-btn" onclick="location.href='login.html'">Login</button>
+
+        <button class="signup-btn" onclick="location.href='login.html'">Sign Up</button>
+
       </div>
     </div>
   </nav>
@@ -305,6 +329,7 @@
           <li>React/Vue/Angular</li>
           <li>UI/UX Principles</li>
         </ul>
+        <button class="start-btn" onclick="location.href='frontend.html'">Start Learning</button>
       </div>
 
       <div class="language-card">
@@ -316,7 +341,8 @@
           <li>API Development</li>
           <li>Security</li>
         </ul>
-      </div>
+        <button class="start-btn" onclick="location.href='backend.html'">Start Learning</button>
+      </div>        
 
       <div class="language-card">
         <h2>Full Stack Development</h2>
@@ -327,6 +353,7 @@
           <li>DevOps</li>
           <li>System Design</li>
         </ul>
+        <button class="start-btn" onclick="location.href='full stack development.html'">Start Learning</button>
       </div>
 
       <div class="language-card">
@@ -338,6 +365,7 @@
           <li>Enterprise Solutions</li>
           <li>Microservices</li>
         </ul>
+        <button class="start-btn" onclick="location.href='java.html'">Start Learning</button>
       </div>
 
       <div class="language-card">
@@ -349,8 +377,8 @@
           <li>Machine Learning</li>
           <li>Automation</li>
         </ul>
+        <button class="start-btn" onclick="location.href='python.html'">Start Learning</button>
       </div>
-
       <div class="language-card">
         <h2>C Programming</h2>
         <p>Foundation of modern programming languages</p>
@@ -360,6 +388,7 @@
           <li>File Handling</li>
           <li>Structured Programming</li>
         </ul>
+        <button class="start-btn" onclick="location.href='C.html'">Start Learning</button>
       </div>
     </div>
 
